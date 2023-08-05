@@ -1,5 +1,6 @@
 module tt_um_spdif_decoder ( 
   input clk,
+  input ena,
   input resetb,
   input rx_in,
   output i2s_bck,
@@ -8,8 +9,8 @@ module tt_um_spdif_decoder (
   output audio_locked,
   output edgedetect
 );
-  wire clk;
-  assign clk = clk_in;
+  // wire clk;
+  // assign clk = clk_in;
   assign audio_locked = 1'b1; 
   
   reg [3:0] correlator;
