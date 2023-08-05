@@ -11,7 +11,7 @@ module tt_um_jkj_spdif_decoder #( parameter MAX_COUNT = 24'd10_000_000 ) (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-spdif_decoder(
+spdif_decoder spdif_decoder(
     .clk_in(clk),
     .resetb(rst_n),
     .rx_in(ui_in[0]),
