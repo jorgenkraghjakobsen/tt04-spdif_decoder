@@ -1,5 +1,5 @@
 module tt_um_spdif_decoder ( 
-  input clk_in,
+  input clk,
   input resetb,
   input rx_in,
   output i2s_bck,
