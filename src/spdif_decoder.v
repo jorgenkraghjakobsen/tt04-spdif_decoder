@@ -39,7 +39,8 @@ module spdif_decoder (
   reg [7:0] bitlength;
   reg bitvalue;
   reg bitedge_detected;
-  reg i2s_bck_reg, i2s_bck_next;
+  reg i2s_bck_reg;
+  reg i2s_bck_next;
   reg phase_reg;
   reg ws_old_reg;
   reg i2s_ws_reg;
@@ -52,7 +53,7 @@ module spdif_decoder (
       ws_old_reg  <= 1'b0;
       phase_reg   <= 1'b0;
       i2s_bck_reg <= 1'b0;
-      i2s_bck_next  <= 1'b0; 
+      //i2s_bck_next  <= 1'b0; 
       bckcnt      <= 8'h00;
       bitcnt      <= 8'h00;
       bitlength   <= 8'h00;
