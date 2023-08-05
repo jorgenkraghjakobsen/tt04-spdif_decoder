@@ -41,6 +41,9 @@ module tt_jkj_spdif_decoder (
   reg i2s_bck_reg, i2s_bck_next;
   reg phase_reg;
   reg ws_old_reg;
+  reg i2s_ws_reg;
+  localparam  bckclks=17;
+  
   always @(posedge clk)
   begin
     if (resetb == 0)
@@ -92,7 +95,7 @@ module tt_jkj_spdif_decoder (
   
   assign edgedetect = i2s_bck; // bitedge_detected & (bitlength > 12) & (bitlength <= 16);
 
-  localparam  bckclks=17;
+  
   //assign i2s_bck_next = (bitcnt <= 8) or (bitcnt )
   always @*
   begin
@@ -173,7 +176,7 @@ module tt_jkj_spdif_decoder (
   reg [4:0]  pcm_index, pcm_index_next ;
   reg [3:0] ext_state = 4'b0000;
   reg [3:0] ext_next = 4'b0000;
-  reg i2s_ws_reg, i2s_ws_next;
+  reg i2s_ws_next;
   reg i2s_d0_reg, i2s_d0_next;
 
   assign i2s_ws    = i2s_ws_reg;
