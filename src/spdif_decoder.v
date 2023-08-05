@@ -1,4 +1,4 @@
-module spdif_decoder ( 
+module tt_jkj_spdif_decoder ( 
   input clk_in,
   input resetb,
   input rx_in,
