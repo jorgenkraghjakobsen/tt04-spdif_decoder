@@ -11,7 +11,7 @@ project:
   top_module:  "tt_um_jkj_spdif_decoder"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
 
 # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"    # Valid values: 1x1, 1x2, 2x2, 4x2 or 8x2
+  tiles: "1x2"    # Valid values: 1x1, 1x2, 2x2, 4x2 or 8x2
 
 # Keep a track of the submission yaml
 yaml_version: 4
@@ -29,11 +29,11 @@ documentation:
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      SPDIF audio is a well known and width spread industri standart for audio distibution on a single optical or electical interface 
+      SPDIF audio is a well known and commonly used industri standart for audio distibution on a single optical or electical interface 
       it embed both the audio data and the clock in the same signal.
-      I2S is a well known and width spread industri standart for audio distibution on a single interface
-      it seperate clock signal and audio pcm date and a left and right channel signal
-      Digial audio amplifiers and DAC's often use I2S as input interface
+      I2S is a well known and commenly used industri standart for audio distibution on a single interface
+      it seperates clock signal, audio pcm date and a left and right channel signal
+      Digial audio amplifiers and DAC's often use I2S as input interface.
 
 
 # dInstructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed

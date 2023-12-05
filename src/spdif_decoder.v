@@ -1,5 +1,5 @@
 module spdif_decoder ( 
-  input clk_in,
+  input clk_in,   //! dsfsdf
   input resetb,
   input rx_in,
   output i2s_bck,
@@ -11,6 +11,7 @@ module spdif_decoder (
   wire clk;
   assign clk = clk_in;
   
+
   assign audio_locked = 1'b1; 
   
   reg [3:0] correlator;
